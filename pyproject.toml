@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datetag"
+version = "1.0.0"
+description = "Add a subtle date tag to the bottom-right corner of your photos, from EXIF — cross-platform CLI + native macOS app"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = ["Pillow>=10.0"]
+
+[project.optional-dependencies]
+heic = ["pillow-heif>=0.13"]
+
+[project.scripts]
+datetag = "datetag:main"
+
+[tool.setuptools]
+py-modules = ["datetag"]

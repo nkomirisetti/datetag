@@ -1,0 +1,2 @@
+Pillow>=10.0
+# Optional, for HEIC/HEIF photos: pillow-heif>=0.13
